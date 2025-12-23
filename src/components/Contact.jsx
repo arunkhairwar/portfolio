@@ -22,10 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
-    >
+    <section id="contact" className="py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -50,7 +47,7 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg text-blue-600 dark:text-blue-400">
+                <div className="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg text-blue-600 dark:text-blue-400 shadow-sm">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
@@ -64,7 +61,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg text-blue-600 dark:text-blue-400">
+                <div className="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg text-blue-600 dark:text-blue-400 shadow-sm">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
@@ -78,7 +75,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg text-blue-600 dark:text-blue-400">
+                <div className="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg text-blue-600 dark:text-blue-400 shadow-sm">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
@@ -94,7 +91,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
+          <div className="bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

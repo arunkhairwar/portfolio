@@ -26,10 +26,7 @@ const About = () => {
   ];
 
   return (
-    <section
-      id="about"
-      className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
-    >
+    <section id="about" className="py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -63,7 +60,7 @@ const About = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 border border-gray-100 dark:border-gray-700"
+                className="bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 border border-gray-100 dark:border-gray-700"
               >
                 <div className="text-blue-600 dark:text-blue-400 mb-4 bg-blue-50 dark:bg-blue-900/20 w-12 h-12 rounded-lg flex items-center justify-center">
                   {skill.icon}

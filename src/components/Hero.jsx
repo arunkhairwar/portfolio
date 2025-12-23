@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300"
+      className="min-h-screen flex items-center pt-16 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center">
         <div className="flex-1 text-center md:text-left">
@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              Alex Chen
+              Arun Khairwar
             </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0">
@@ -62,7 +62,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex-1 mt-12 md:mt-0 relative">
+        {/* <div className="flex-1 mt-12 md:mt-0 relative">
           <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
             <div className="absolute inset-0 bg-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
             <img
@@ -71,7 +71,7 @@ const Hero = () => {
               className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-2xl"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
