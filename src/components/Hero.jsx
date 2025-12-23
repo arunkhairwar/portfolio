@@ -14,15 +14,20 @@ const Hero = () => {
               Available for new opportunities
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0">
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer font-semibold">
               Arun Khairwar
+            </span>{" "}
+          </p>
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              FRONTED DEVELOPER
             </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0">
-            A passionate Full Stack Developer crafting beautiful and functional
-            web experiences with modern technologies.
+            Crafting beautiful and functional web experiences with modern
+            technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-12">
