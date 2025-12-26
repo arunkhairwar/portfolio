@@ -52,7 +52,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group border border-gray-100 dark:border-gray-700"
+              className="bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group border border-gray-100 dark:border-gray-700 cursor-pointer"
             >
               <div className="relative overflow-hidden aspect-video">
                 <img
