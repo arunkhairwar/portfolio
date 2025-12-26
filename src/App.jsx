@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,6 +7,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ProjectDetails from "./components/ProjectDetails";
 
 function App() {
   return (
@@ -31,11 +33,21 @@ function App() {
       <div className="relative z-10 transition-colors duration-300">
         <Navbar />
         <main>
-          <Hero />
-          <Projects />
-          {/* <About /> */}
-          <Experience />
-          <Contact />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Projects />
+                  {/* <About /> */}
+                  <Experience />
+                  <Contact />
+                </>
+              }
+            />
+            <Route path="/project/:id" element={<ProjectDetails />} />
+          </Routes>
         </main>
         <Footer />
       </div>

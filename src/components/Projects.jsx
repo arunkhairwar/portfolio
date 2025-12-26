@@ -1,40 +1,11 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
-
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A full-featured shopping platform with cart functionality, payment processing, and admin dashboard.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?fit=crop&w=800&q=80",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "Collaborative project management tool with real-time updates and team workspace features.",
-    tags: ["Vue.js", "Firebase", "Tailwind", "Pinia"],
-    image:
-      "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?fit=crop&w=800&q=80",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Analytics Dashboard",
-    description:
-      "Data visualization platform processing large datasets and presenting actionable insights.",
-    tags: ["React", "D3.js", "Python", "AWS"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=800&q=80",
-    github: "#",
-    live: "#",
-  },
-];
+import { useNavigate } from "react-router-dom";
+import { projects } from "../data/projects";
 
 const Projects = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,9 +20,10 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
-              key={index}
+              key={project.id}
+              onClick={() => navigate(`/project/${project.id}`)}
               className="bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group border border-gray-100 dark:border-gray-700 cursor-pointer"
             >
               <div className="relative overflow-hidden aspect-video">
@@ -61,18 +33,9 @@ const Projects = () => {
                   className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
-                  <a
-                    href={project.github}
-                    className="p-2 bg-white rounded-full hover:bg-gray-100 transition"
-                  >
-                    <Github className="w-6 h-6 text-gray-900" />
-                  </a>
-                  <a
-                    href={project.live}
-                    className="p-2 bg-white rounded-full hover:bg-gray-100 transition"
-                  >
-                    <ExternalLink className="w-6 h-6 text-gray-900" />
-                  </a>
+                  <span className="text-white font-medium px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition">
+                    View Details
+                  </span>
                 </div>
               </div>
 
