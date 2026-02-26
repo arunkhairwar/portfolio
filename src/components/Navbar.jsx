@@ -13,7 +13,7 @@ import {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system",
   );
   const [activeSection, setActiveSection] = useState("");
   const element = document.documentElement;
@@ -68,7 +68,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-      const scrollPosition = window.scrollY + 100; // Offset for better accuracy
+      const scrollPosition = window.scrollY + 100; 
 
       sections.forEach((section) => {
         const top = section.offsetTop;
@@ -101,7 +101,7 @@ const Navbar = () => {
               href="/"
               className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
             >
-              ARUNKHAIRWAR.DEV
+              ARUNKHAIRWAR
             </a>
           </div>
 

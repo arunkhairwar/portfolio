@@ -47,23 +47,23 @@ const Hero = () => {
 
           <div className="flex items-center justify-center md:justify-start gap-6 text-gray-600 dark:text-gray-400">
             <a
-              href="#"
+              href="https://github.com/arunkhairwar"
               className="hover:text-blue-600 dark:hover:text-blue-400 transition transform hover:scale-110"
             >
               <Github size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/arun-khairwar"
               className="hover:text-blue-600 dark:hover:text-blue-400 transition transform hover:scale-110"
             >
               <Linkedin size={24} />
             </a>
-            <a
+            {/* <a
               href="#"
               className="hover:text-Twitter-blue dark:hover:text-blue-400 transition transform hover:scale-110"
             >
               <Twitter size={24} />
-            </a>
+            </a> */}
           </div>
         </div>
 

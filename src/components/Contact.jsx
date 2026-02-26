@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Contact = () => {
   const [isCopied, setIsCopied] = useState(false);
-  const email = "arun.khairwar@example.com";
+  const email = "arunkhairwar.dev@gmail.com";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
@@ -26,7 +26,7 @@ const Contact = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <a
-              href="mailto:arun.khairwar@example.com"
+              href={`mailto:${email}`}
               className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-2 shadow-md hover:shadow-lg"
             >
               Say Hello
