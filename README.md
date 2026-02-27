@@ -1,16 +1,94 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React and Vite, featuring a dark/light theme, smooth animations, and project showcases.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dark / Light Mode** — seamless theme toggle with smooth transitions
+- **Project Showcase** — dedicated cards with detailed project pages (`/project/:id`)
+- **Sections** — Hero, Projects, Experience, Contact, and Footer
+- **Responsive Design** — fully optimized for mobile, tablet, and desktop
+- **Modern UI** — grid backgrounds, gradient glows, and micro-animations
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer     | Technology         |
+| --------- | ------------------ |
+| Framework | React 19           |
+| Bundler   | Vite 7             |
+| Styling   | Tailwind CSS 3     |
+| Routing   | React Router DOM 7 |
+| Icons     | Lucide React       |
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm (comes with Node.js)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/arunkhairwar/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Production Build
+
+```bash
+npm run build
+npm run preview   # preview the production build locally
+```
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── public/              # Static assets
+├── src/
+│   ├── assets/          # Images and media
+│   ├── components/      # React components
+│   │   ├── Navbar       # Navigation bar with theme toggle
+│   │   ├── Hero         # Landing section
+│   │   ├── Projects     # Project cards grid
+│   │   ├── ProjectDetails # Individual project page
+│   │   ├── Experience   # Work experience timeline
+│   │   ├── Contact      # Contact form / details
+│   │   ├── About        # About section
+│   │   └── Footer       # Site footer
+│   ├── data/
+│   │   └── projects.js  # Project data
+│   ├── App.jsx          # Root component with routing
+│   ├── main.jsx         # Entry point
+│   └── index.css        # Global styles
+├── index.html           # HTML entry point
+├── tailwind.config.js   # Tailwind configuration
+├── vite.config.js       # Vite configuration
+└── package.json
+```
+
+## 📜 Available Scripts
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start the development server         |
+| `npm run build`   | Create an optimized production build |
+| `npm run preview` | Preview the production build         |
+| `npm run lint`    | Run ESLint to check for issues       |
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
